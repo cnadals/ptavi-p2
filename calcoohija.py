@@ -8,7 +8,7 @@ class Calculadora():
         return op1 + op2
 
     def resta(self, op1, op2):
-        return op1 - op2
+        return op1 - op2ntaG
 
 class CalculadoraHija(Calculadora):
 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
-	CalculaDeNuevo = CalculadoraHija()
+    CalculaDeNuevo = CalculadoraHija()
 
     if sys.argv[2] == "suma":
         resultado = CalculaDeNuevo.suma(operando1, operando2)
@@ -42,4 +42,4 @@ if __name__ == "__main__":
     else:
         sys.exit('Operación no válida.')
 
-    print(resultado)
+print(resultado)
