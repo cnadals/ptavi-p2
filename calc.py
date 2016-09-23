@@ -8,7 +8,6 @@ def plus(op1, op2):
     """ Function to sum the operands """
     return op1 + op2
 
-
 def minus(op1, op2):
     """ Function to substract the operands """
     return op1 - op2
