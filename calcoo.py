@@ -3,7 +3,7 @@
 
 import sys
 
-class Calculadora:
+class Calculadora():
     def suma(self, op1, op2):
         return op1 + op2
 
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 	CalculadoraNueva = Calculadora()
 
     if sys.argv[2] == "suma":
-        resultado = CalculadoraNueva.suma(op1, op2)
+        resultado = CalculadoraNueva.suma(operando1, operando2)
     elif sys.argv[2] == "resta":
         resultado = CalculadoraNueva.resta(operando1, operando2)
     else:
