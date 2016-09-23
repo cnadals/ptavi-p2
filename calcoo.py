@@ -3,7 +3,7 @@
 
 import sys
 
-class Calculadora():
+class Calculadora:
     def suma(self, op1, op2):
         return op1 + op2
 
@@ -12,20 +12,18 @@ class Calculadora():
 
 if __name__ == "__main__":
 
-	calculadora = Calculadora()
-
     try:
         operando1 = int(sys.argv[1])
         operando2 = int(sys.argv[3])
     except ValueError:
         sys.exit("Error: Non numerical parameters")
 
-
+	CalculadoraNueva = Calculadora()
 
     if sys.argv[2] == "suma":
-        resultado = calculadora.suma(op1, op2)
+        resultado = CalculadoraNueva.suma(op1, op2)
     elif sys.argv[2] == "resta":
-        resultado = calculadora.resta(operando1, operando2)
+        resultado = CalculadoraNueva.resta(operando1, operando2)
     else:
         sys.exit('Operación sólo puede ser sumar o restar.')
 
