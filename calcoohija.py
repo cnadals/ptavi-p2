@@ -4,6 +4,7 @@
 import calcoo
 import sys
 
+
 class CalculadoraHija(calcoo.Calculadora):
 
     def multiplicacion(self, op1, op2):
