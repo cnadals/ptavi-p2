@@ -5,20 +5,24 @@ import sys
 
 
 def plus(op1, op2):
-    """ Function to sum the operands """
+    """ Function to add the operands """
     return op1 + op2
+
 
 def minus(op1, op2):
     """ Function to substract the operands """
     return op1 - op2
 
+
 def mult(op1, op2):
     """ Function to multiply the operands """
     return op1 * op2
 
+
 def div(op1, op2):
     """ Function to divide the operands """
     return op1 / op2
+
 
 if __name__ == "__main__":
     try:
