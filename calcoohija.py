@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import sys
 import calcoo
+import sys
 
 class CalculadoraHija(calcoo.Calculadora):
 
@@ -25,6 +25,8 @@ if __name__ == "__main__":
 
     CalculaDeNuevo = CalculadoraHija()
 
+    print(sys.argv)
+
     if sys.argv[2] == "suma":
         resultado = CalculaDeNuevo.suma(operando1, operando2)
     elif sys.argv[2] == "resta":
@@ -36,4 +38,4 @@ if __name__ == "__main__":
     else:
         sys.exit('Operación no válida.')
 
-print(resultado)
+    print(resultado)
