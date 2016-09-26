@@ -3,6 +3,7 @@
 
 import sys
 
+
 class Calculadora():
 	def suma(self, op1, op2):
 		return op1 + op2
@@ -10,8 +11,7 @@ class Calculadora():
 	def resta(self, op1, op2):
 		return op1 - op2
 
-if __name__ == "__main__":
-
+if __name__ == "__main":
 	try:
 		operando1 = int(sys.argv[1])
 		operando2 = int(sys.argv[3])
@@ -26,5 +26,4 @@ if __name__ == "__main__":
 		resultado = CalculadoraNueva.resta(operando1, operando2)
 	else:
 		sys.exit('Operación sólo puede ser sumar o restar.')
-
-print(resultado)
+	print(resultado)
