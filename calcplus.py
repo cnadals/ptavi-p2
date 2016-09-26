@@ -8,9 +8,8 @@ import calcoohija
 #Empiezo
 if __name__ == "__main__":
 
-    #Abro el fichero
-    with open('ficherooperaciones.csv') as fichero:
-        Datos = csv.reader(fichero)
+        fichero = open('fichero.csv', 'r')
+        lineas = fichero.readlines()
 
         c = calcoohija.CalculadoraHija()
 
