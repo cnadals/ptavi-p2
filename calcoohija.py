@@ -2,15 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import calcoo
 
-class Calculadora():
-    def suma(self, op1, op2):
-        return op1 + op2
-
-    def resta(self, op1, op2):
-        return op1 - op2ntaG
-
-class CalculadoraHija(Calculadora):
+class CalculadoraHija(calcoo.Calculadora):
 
     def multiplicacion(self, op1, op2):
         return op1 * op2
